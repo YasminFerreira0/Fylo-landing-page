@@ -1,7 +1,11 @@
+
+
 body {
     display: flex;
     flex-direction: column;
     margin: 2vw 4vw;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .cabecalho {
