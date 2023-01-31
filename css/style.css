@@ -7,21 +7,20 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    background-color: hsl(240, 75%, 98%);
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 30vw;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    
-    margin: 3vw 4vw;
+    padding: 3vw 4vw;
 }
 
 .logo-cabecalho {
-    height: 2.3em;
+    height: 2em;
 }
 
 .links-cabecalho {
@@ -32,22 +31,22 @@ body {
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: 400;
 }
 
-.caixa-01, .caixa-02 {
+.caixa-01 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    margin: 3vw 4vw;
+    padding: 0 4vw;
+    padding-bottom: 100px;
 }
 
 .ilustracao-01, .ilustracao-02 {
-    width: 90vw;
-    margin-top: 100px;
+    width: 85vw;
+    margin-top: 90px;
     margin-bottom: 50px;
 }
 
@@ -61,11 +60,11 @@ body {
     color: hsl(243, 87%, 12%);
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .paragrafo-caixa-01 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin: 20px;
 }
 
@@ -87,6 +86,21 @@ body {
     padding: 10px;
     border-radius: 3px;
     margin: 0 20px;
+}
+
+.curva {
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45px;
+}
+.caixa-02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(240, 75%, 98%);
 }
 
 .caixa-texto-02 {
@@ -257,9 +271,9 @@ body {
 @media screen and (min-width: 780px) {
     
     .cabecalho {
-        margin: 5vw 6vw;
+        gap: 50vw;
     }
-    
+
     .logo-cabecalho {
         height: 3em;
     }
@@ -269,12 +283,12 @@ body {
         font-size: 1.1em;
     }
     
-    .caixa-01, .caixa-02 {
+    .caixa-01 {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        margin: 50px 6vw;
+        margin: 50px 4vw 0 4vw;
     }
     
     .ilustracao-01, .ilustracao-02 {
@@ -313,9 +327,22 @@ body {
         border-radius: 3px;
         margin: 0;
     }
-
+    .curva {
+        background-image: url(../images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60px;
+    }
+    
     .caixa-02 {
-        margin-top: 200px;
+        width: 100%;
+        background-color: hsl(240, 75%, 98%);
+        padding: 50px 4vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: center;
     }
     
     .caixa-texto-02 {
@@ -357,7 +384,7 @@ body {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 100px 6vw;
+        padding: 100px 4vw;
         gap: 18vw;
     }
     
@@ -394,7 +421,7 @@ body {
         justify-content: left;
         align-items: center;
         gap: 10vw;
-        padding: 100px 6vw;
+        padding: 100px 4vw;
     }
     
     .logo-rodape {
